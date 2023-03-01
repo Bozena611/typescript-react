@@ -1,5 +1,5 @@
 /* Add type for props and the page works */
-
+/* type for string, number, boolean*/
 type GreetProps = {
 	name: string
 	messageCount: number
