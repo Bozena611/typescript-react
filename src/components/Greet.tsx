@@ -1,6 +1,10 @@
-/* Without declaring type for props with typescript the page gives error*/
+/* Add type for props and the page works */
 
-export const Greet = (props) => {
+type GreetProps = {
+	name: string
+}
+
+export const Greet = (props: GreetProps) => {
 	return (
 		<div>
 			<h2>Welcome {props.name}! You have 10 unread messages</h2>
