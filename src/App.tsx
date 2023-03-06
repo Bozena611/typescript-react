@@ -37,6 +37,7 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Michelle Yeoh!</Heading>
       </Oscar>
+      <Greet name='Bruce' isLoggedIn={true}/>
     </div>
   );
 }
