@@ -40,8 +40,8 @@ function App() {
       </Oscar>
       <Greet name='Bruce' isLoggedIn={true}/>
       <Button
-        handleClick={() => {
-          console.log('Button clicked')
+        handleClick={(event) => {
+          console.log('Button clicked', event)
         }}
       />
     </div>
