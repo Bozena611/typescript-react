@@ -3,11 +3,26 @@ import { useReducer } from 'react'
 type CounterState = {
   count: number
 }
+/*lines 9-25 are called "Discriminated Unions" in Typescript
+and is the recommended approach for typing reducer functions*/
 
+type UpdateAction = {
+  type: 'increment' | 'decrement'
+  payload: number
+}
+
+type ResetAction = {
+  type: 'reset'
+}
+/*
 type CounterAction = {
   type: 'increment' | 'decrement' | 'reset'
-  payload?: number /* type reset doesn't need payload but Typescript shows error for button onclick for reset and is asking for payload */
-}                   /* we can add ? here but then Typescript complains in line 17 and 18 about payload being possibly undefined */
+  payload?: number /*type reset doesn't need payload but Typescript shows error for button onclick for reset and is asking for payload
+}                    we can add ? here but then Typescript complains in line 17 and 18 about payload being possibly undefined
+*/
+
+/* so we add separate update and reset action and change CounterAction to: */
+type CounterAction = UpdateAction | ResetAction
 
 const initialState = { count: 0 }
 
