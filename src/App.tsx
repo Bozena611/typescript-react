@@ -11,6 +11,8 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Counter } from './components/state/Counter';
 import { Status } from './components/Status';
+import { UserContextProvider } from './components/context/UserContext';
+import { User } from './components/context/User';
 
 
 function App() {
@@ -55,6 +57,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
