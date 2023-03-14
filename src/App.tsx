@@ -15,6 +15,7 @@ import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
 import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
+import { Counterclass } from './components/class/Counterclass';
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
       </UserContextProvider>
       <DomRef />
       <MutableRef />
+      <Counterclass message='The count value is ' />
     </div>
   );
 }
