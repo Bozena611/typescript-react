@@ -14,6 +14,7 @@ import { Status } from './components/Status';
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
 import { DomRef } from './components/ref/DomRef';
+import { MutableRef } from './components/ref/MutableRef';
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
         <User />
       </UserContextProvider>
       <DomRef />
+      <MutableRef />
     </div>
   );
 }

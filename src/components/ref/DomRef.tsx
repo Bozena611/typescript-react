@@ -1,5 +1,7 @@
 import { useRef, useEffect } from 'react';
 
+/*for DomRef specify DOM type (line 6)*/
+
 export const DomRef = () => {
 	const inputRef = useRef<HTMLInputElement>(null!) /*if you are sure your ref is never null add !*/
 
@@ -14,7 +16,7 @@ export const DomRef = () => {
 	)
 }
 
-/* we can fix the error by adding optional chaining on current (line 24)
+/* we can fix the error by adding optional chaining on current (line 26)
 	and then we get another error on focus and we need to specify the DOM element
 	so we add HTML element to useRef (line 21)
 export const DomRef = () => {
@@ -32,7 +34,7 @@ export const DomRef = () => {
 }
 */
 
-/* shows typescript error on line 40
+/* shows typescript error on line 42
 export const DomRef = () => {
 	const inputRef = useRef(null)
 
