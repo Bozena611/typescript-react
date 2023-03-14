@@ -13,6 +13,7 @@ import { Counter } from './components/state/Counter';
 import { Status } from './components/Status';
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
+import { DomRef } from './components/ref/DomRef';
 
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <DomRef />
     </div>
   );
 }
