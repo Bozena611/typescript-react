@@ -19,6 +19,7 @@ import { Counterclass } from './components/class/Counterclass';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 
 function App() {
@@ -92,6 +93,8 @@ function App() {
         ]}
         onClick={(item: any) => console.log(item)}
       />
+     {/*domNumber value={10} isPositive isNegative isZero />*/}
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
