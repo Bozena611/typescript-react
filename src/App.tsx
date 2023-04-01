@@ -70,25 +70,22 @@ function App() {
       <MutableRef />
       <Counterclass message='The countclass value is ' />
       <Private isLoggedIn={true} component={Profile} />
-   { /*<List
+      <List
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={(item) => console.log (item)}
       />
-      <List items={[1, 2, 3]} onClick={(item) => console.log (item)} />*/}
+      <List items={[1, 2, 3]} onClick={(item) => console.log (item)} />
       <List
         items={[
         {
-          id: 1,
           first: 'BElanna',
           last: 'Torres'
         },
         {
-          id: 2,
           first: 'Kathryn',
           last: 'Janeway'
         },
         {
-          id: 3,
           first: 'Seven',
           last: 'of nine'
         }
