@@ -65,7 +65,7 @@ function App() {
       </UserContextProvider>
       <DomRef />
       <MutableRef />
-      <Counterclass message='The count value is ' />
+      <Counterclass message='The countclass value is ' />
     </div>
   );
 }

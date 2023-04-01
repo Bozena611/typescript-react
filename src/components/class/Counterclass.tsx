@@ -13,6 +13,19 @@ export class Counterclass extends Component<CounterProps, CounterState> {
 		count: 0
 	}
 
+	/* if you don't have props or state in your component use empty object {} for props, or delete state for state
+	export class Counterclass extends Component<{}, CounterState> {
+	state = {
+		count: 0
+	}
+
+	export class Counterclass extends Component<CounterProps > {
+	state = {
+		count: 0
+	}
+
+	*/
+
 	handleClick = () => {
 		this.setState(prevState => ({ count: prevState.count + 1 }))
 	}
