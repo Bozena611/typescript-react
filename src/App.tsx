@@ -23,6 +23,7 @@ import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import { CustomButton } from './components/html/Button';
 import { CustomInput } from './components/html/Input';
+import { CustomComponent } from './components/html/CustomComponent';
 
 
 function App() {
@@ -104,6 +105,7 @@ function App() {
         Primary Button
       </CustomButton>
       <CustomInput />
+      <CustomComponent name='Bruce2' isLoggedIn={true} />
     </div>
   );
 }
